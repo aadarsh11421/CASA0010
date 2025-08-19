@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-13 14:43:47 by Eclipse SUMO netedit Version 1.23.1
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="aggressive_bike" length="1.87" minGap="0.50" maxSpeed="16.67" vClass="motorcycle" emissionClass="HBEFA4/PC_petrol_Euro-4" width="0.64" maxSpeedLat="2.00" latAlignment="compact" minGapLat="0.20" laneChangeModel="SL2015" lcSpeedGain="5" lcKeepRight="0" lcPushy="1" lcAssertive="2" lcImpatience="0.5" lcTimeToImpatience="20" carFollowModel="IDM" accel="3.8" decel="6.5" tau="0.7">
+        <param key="sigma" value="0.5"/>
+    </vType>
+    <vType id="aggressive_car" length="3.72" minGap="1.50" maxSpeed="16.67" width="1.44" maxSpeedLat="1.50" latAlignment="compact" minGapLat="0.30" laneChangeModel="SL2015" lcCooperative="0.2" lcSpeedGain="5" lcKeepRight="0" lcPushy="0.6" lcAssertive="2" lcImpatience="0.5" lcTimeToImpatience="30" carFollowModel="IDM" accel="3" decel="5" tau="0.9">
+        <param key="sigma" value="0.5"/>
+    </vType>
+    <vType id="auto_rickshaw" length="3.20" minGap="1.00" maxSpeed="11.60" vClass="taxi" guiShape="rickshaw" width="1.40" latAlignment="compact" laneChangeModel="SL2015" lcCooperative="0.4" lcSpeedGain="3" lcKeepRight="0" lcPushy="0.6" lcAssertive="1.1" lcImpatience="0.2" lcTimeToImpatience="20" carFollowModel="IDM" accel="2.3" decel="4" tau="1.2">
+        <param key="sigma" value="0.3"/>
+    </vType>
+    <vType id="bus" length="11.60" minGap="3.00" maxSpeed="9.72" vClass="bus" emissionClass="HBEFA4/PC_petrol_Euro-4" width="2.60" height="3.40" laneChangeModel="SL2015" lcCooperative="0.4" lcKeepRight="0.5" lcPushy="0.2" lcAssertive="0.8" carFollowModel="IDM" accel="1" decel="3" tau="1.5">
+        <param key="sigma" value="0.2"/>
+    </vType>
+    <vType id="normal_bike" length="1.87" minGap="1.00" maxSpeed="13.89" vClass="motorcycle" emissionClass="HBEFA4/PC_petrol_Euro-4" width="0.64" latAlignment="right" minGapLat="0.40" laneChangeModel="SL2015" lcSpeedGain="1.3" lcKeepRight="0" lcPushy="0.2" lcAssertive="1.1" carFollowModel="IDM" accel="2.4" decel="5" tau="1.2">
+        <param key="sigma" value="0.3"/>
+    </vType>
+    <vType id="normal_car" length="3.72" minGap="2.00" maxSpeed="13.89" width="1.44" laneChangeModel="SL2015" lcCooperative="0.8" lcSpeedGain="0.7" lcKeepRight="0.5" lcPushy="0.2" lcAssertive="0.6" carFollowModel="IDM" accel="2.3" decel="4.3" tau="1.5">
+        <param key="sigma" value="0.2"/>
+    </vType>
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <flow id="bus_1" type="bus" begin="0.00" departLane="2" departSpeed="0.00" from="E7" to="E3" end="3600.00" vehsPerHour="66.88"/>
+    <flow id="bus_2" type="bus" begin="0.00" departLane="2" from="-E8" to="E0" end="3600.00" vehsPerHour="46.77"/>
+    <flow id="f_0" type="normal_car" begin="0.00" departLane="free" departSpeed="0.00" from="E7" to="E3" end="3600.00" vehsPerHour="825.69"/>
+    <flow id="f_1" type="auto_rickshaw" begin="0.00" departLane="free" departSpeed="0.00" from="E7" to="E3" end="3600.00" vehsPerHour="222.91"/>
+    <flow id="f_10" type="normal_car" begin="0.00" departLane="free" departSpeed="0.00" from="-E8" to="E1" end="3600.00" vehsPerHour="123.58"/>
+    <flow id="f_11" type="normal_car" begin="0.00" departLane="free" departSpeed="0.00" from="-E8" to="E0" end="3600.00" vehsPerHour="576.92"/>
+    <flow id="f_12" type="normal_car" begin="0.00" departLane="free" departSpeed="0.00" from="E2" to="E0" end="3600.00" vehsPerHour="86.77"/>
+    <flow id="f_13" type="normal_car" begin="0.00" departLane="free" departSpeed="0.00" from="E2" to="E3" end="3600.00" vehsPerHour="86.77"/>
+    <flow id="f_14" type="normal_car" begin="0.00" departLane="free" departSpeed="0.00" from="E9" to="E3" end="3600.00" vehsPerHour="145.22"/>
+    <flow id="f_15" type="normal_car" begin="0.00" departLane="free" departSpeed="0.00" from="E9" to="E0" end="3600.00" vehsPerHour="145.22"/>
+    <flow id="f_16" type="normal_car" begin="0.00" departLane="free" departSpeed="0.00" from="E9" to="E10.44" end="3600.00" vehsPerHour="124.52"/>
+    <flow id="f_17" type="normal_car" begin="0.00" departLane="free" departSpeed="0.00" from="E2" to="E1" end="3600.00" vehsPerHour="74.36"/>
+    <flow id="f_18" type="normal_bike" begin="0.00" departLane="free" departSpeed="0.00" from="E7" to="E3" end="3600.00" vehsPerHour="1114.55"/>
+    <flow id="f_19" type="normal_bike" begin="0.00" departLane="free" departSpeed="0.00" from="-E8" to="E0" end="3600.00" vehsPerHour="779.22"/>
+    <flow id="f_2" type="auto_rickshaw" begin="0.00" departLane="free" departSpeed="0.00" from="-E8" to="E0" end="3600.00" vehsPerHour="155.91"/>
+    <flow id="f_20" type="normal_bike" begin="0.00" departLane="random" departSpeed="0.00" from="E7" to="E1" end="3600.00" vehsPerHour="238.89"/>
+    <flow id="f_21" type="normal_bike" begin="0.00" departLane="free" departSpeed="0.00" from="E7" to="E10.44" end="3600.00" vehsPerHour="238.89"/>
+    <flow id="f_22" type="normal_bike" begin="0.00" departLane="free" departSpeed="0.00" from="-E8" to="E10.44" end="3600.00" vehsPerHour="167.05"/>
+    <flow id="f_23" type="normal_bike" begin="0.00" departLane="free" departSpeed="0.00" from="-E8" to="E1" end="3600.00" vehsPerHour="167.05"/>
+    <flow id="f_24" type="normal_bike" begin="0.00" departLane="free" departSpeed="0.00" from="E2" to="E3" end="3600.00" vehsPerHour="117.26"/>
+    <flow id="f_25" type="normal_bike" begin="0.00" departLane="free" departSpeed="0.00" from="E2" to="E0" end="3600.00" vehsPerHour="117.26"/>
+    <flow id="f_26" type="normal_bike" begin="0.00" departLane="free" departSpeed="0.00" from="E9" to="E0" end="3600.00" vehsPerHour="196.29"/>
+    <flow id="f_27" type="normal_bike" begin="0.00" departLane="free" departSpeed="0.00" from="E9" to="E3" end="3600.00" vehsPerHour="196.29"/>
+    <flow id="f_28" type="normal_bike" begin="0.00" departLane="free" departSpeed="0.00" from="E2" to="E1" end="3600.00" vehsPerHour="100.5"/>
+    <flow id="f_29" type="normal_bike" begin="0.00" departLane="free" departSpeed="0.00" from="E9" to="E10.44" end="3600.00" vehsPerHour="168.3"/>
+    <flow id="f_3" type="auto_rickshaw" begin="0.00" departLane="free" departSpeed="0.00" from="E7" to="E1" end="3600.00" vehsPerHour="47.76"/>
+    <flow id="f_30" type="auto_rickshaw" begin="0.00" departLane="free" departSpeed="0.00" from="E2" to="E3" end="3600.00" vehsPerHour="20.1"/>
+    <flow id="f_31" type="auto_rickshaw" begin="0.00" departLane="free" departSpeed="0.00" from="E2" to="E0" end="3600.00" vehsPerHour="23.45"/>
+    <flow id="f_32" type="auto_rickshaw" begin="0.00" departLane="free" departSpeed="0.00" from="E9" to="E3" end="3600.00" vehsPerHour="39.27"/>
+    <flow id="f_33" type="auto_rickshaw" begin="0.00" departLane="free" departSpeed="0.00" from="E9" to="E0" end="3600.00" vehsPerHour="39.27"/>
+    <flow id="f_34" type="auto_rickshaw" begin="0.00" departLane="free" departSpeed="0.00" from="E2" to="E1" end="3600.00" vehsPerHour="20.1"/>
+    <flow id="f_35" type="auto_rickshaw" begin="0.00" departLane="free" departSpeed="0.00" from="E9" to="E10.44" end="3600.00" vehsPerHour="33.66"/>
+    <flow id="f_4" type="normal_car" begin="0.00" departLane="free" departSpeed="0.00" from="E7" to="E1" end="3600.00" vehsPerHour="176.73"/>
+    <flow id="f_5" type="auto_rickshaw" begin="0.00" departLane="free" departSpeed="0.00" from="E7" to="E10.44" end="3600.00" vehsPerHour="47.76"/>
+    <flow id="f_6" type="auto_rickshaw" begin="0.00" departLane="free" departSpeed="0.00" from="-E8" to="E1" end="3600.00" vehsPerHour="33.41"/>
+    <flow id="f_7" type="auto_rickshaw" begin="0.00" departLane="free" departSpeed="0.00" from="-E8" to="E10.44" end="3600.00" vehsPerHour="33.41"/>
+    <flow id="f_8" type="normal_car" begin="0.00" departLane="free" departSpeed="0.00" from="E7" to="E10.44" end="3600.00" vehsPerHour="176.73"/>
+    <flow id="f_9" type="normal_car" begin="0.00" departLane="free" departSpeed="0.00" from="-E8" to="E10.44" end="3600.00" vehsPerHour="123.58"/>
+</routes>
